@@ -34,7 +34,7 @@ fi
 
 # Install PikaOS sources
 apt install wget -y
-wget https://ppa.pika-os.com/dists/6.5.5/pika-sources.deb
+wget https://ppa.pika-os.com/dists/pikauwu/pika-sources.deb
 apt install ./pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 rm -rf ./pika-sources.deb
 apt-get update -y
