@@ -28,7 +28,6 @@ DISTRO_PKGS=\
 	iucode-tool \
 	setserial \
 	git \
-	wireguard-modules \
 	kernel-pika  \
 	open-vm-tools \
 	open-vm-tools-desktop \
