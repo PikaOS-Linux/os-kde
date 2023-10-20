@@ -1,6 +1,4 @@
-
-
-name: PikaOS KDE lunar
+name: PikaOS 3 KDE
 
 on:
   workflow_dispatch

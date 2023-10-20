@@ -49,7 +49,9 @@ LIVE_PKGS=\
 	casper \
 	expect \
 	gparted \
-	calamares-settings-pika-kde
+	pikainstall \
+	vanilla-installer \
+	pika-first-setup-user 
 
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
@@ -63,7 +65,6 @@ RM_PKGS=\
 	unattended-upgrades \
 	xul-ext-ubufox \
 	tilix \
-	ibus \
 	gnome-shell \
 	nautilus \
 	gnome-sushi \
@@ -71,7 +72,8 @@ RM_PKGS=\
 	mutter-common \
 	mutter-common-bin \
 	apport \
-	gnome-terminal
+	gnome-terminal \
+	rt-kit
 
 # Packages not installed, but that may need to be discovered by the installer
 MAIN_POOL=\

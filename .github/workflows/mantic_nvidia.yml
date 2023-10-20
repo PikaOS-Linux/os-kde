@@ -1,6 +1,4 @@
-
-
-name: PikaOS KDE lunar (nvidia)
+name: PikaOS 3 KDE (nvidia)
 
 on:
   workflow_dispatch
