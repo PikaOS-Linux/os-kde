@@ -41,10 +41,6 @@ apt-get update -y
 
 apt install software-properties-common --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 
-add-apt-repository ppa:kubuntu-ppa/backports
-
-apt-get update -y
-
 # Actions to do before DISTRO_PKGS
 sudo apt install initramfs-tools adwaita-icon-theme humanity-icon-theme amdgpu-drm --yes --option Acquire::Retries=5
 sudo apt install update-notifier --yes --option Acquire::Retries=5
