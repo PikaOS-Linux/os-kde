@@ -67,7 +67,7 @@ RM_PKGS=\
 	gnome-shell \
 	nautilus \
 	gnome-sushi \
-	libmutter-12-0 \
+	libmutter-13-0 \
 	mutter-common \
 	mutter-common-bin \
 	apport \
