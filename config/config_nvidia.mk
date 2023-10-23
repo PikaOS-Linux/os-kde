@@ -72,7 +72,7 @@ RM_PKGS=\
 	mutter-common-bin \
 	apport \
 	gnome-terminal \
-	rt-kit
+	rtkit
 
 # Packages not installed, but that may need to be discovered by the installer
 MAIN_POOL=\
