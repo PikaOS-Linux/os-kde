@@ -35,6 +35,13 @@ $(BUILD)/iso_casper.tag: $(BUILD)/live $(BUILD)/chroot.tag $(BUILD)/live.tag $(B
 	# Update filesystem size
 	sudo du -sx --block-size=1 "$(BUILD)/live" | cut -f1 > "$(BUILD)/iso/$(CASPER_PATH)/filesystem.size"
 
+	# Get rid of chroot kernel from image
+	sudo rm -rfv "$(BUILD)/live/boot/initrd.img-$(HOST_KERNEL)"
+	sudo rm -rfv "$(BUILD)/live/boot/vmlinuz-$(HOST_KERNEL)"
+	sudo rm -rfv "$(BUILD)/live/boot/config-$(HOST_KERNEL)"
+	sudo rm -rfv "$(BUILD)/live/usr/src/linux-headers-$(HOST_KERNEL)"
+	sudo rm -rfv "$(BUILD)/live/usr/src/linux-headers-$(HOST_KERNEL)"
+
 	# Rebuild filesystem image
 	sudo mksquashfs "$(BUILD)/live" \
 		"$(BUILD)/iso/$(CASPER_PATH)/filesystem.squashfs" \
