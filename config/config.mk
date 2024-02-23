@@ -28,7 +28,8 @@ DISTRO_PKGS=\
 	iucode-tool \
 	setserial \
 	git \
-	kernel-pika  \
+	pika-first-setup-gtk4 \
+	kernel-pika \
 	open-vm-tools \
 	open-vm-tools-desktop \
 	f2fs-tools \
@@ -46,9 +47,8 @@ LIVE_PKGS=\
 	expect \
 	gparted \
 	pikainstall \
-	vanilla-installer \
-	pika-first-setup-user 
-	
+	pika-installer-gtk4
+
 # Packages to remove from installed system (usually installed as Recommends)
 RM_PKGS=\
 	ibus-mozc \
@@ -60,13 +60,13 @@ RM_PKGS=\
 	ubuntu-wallpapers \
 	unattended-upgrades \
 	xul-ext-ubufox \
-	tilix \
+ 	tilix \
 	gnome-shell \
 	nautilus \
 	gnome-sushi \
-	apport \
+ 	apport \
 	gnome-terminal \
-	rtkit
+ 	rtkit
 
 # Packages not installed, but that may need to be discovered by the installer
 MAIN_POOL=\
